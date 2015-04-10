@@ -1,0 +1,16 @@
+body {height:100%;margin:0px;padding:0px;}
+html {-webkit-font-smoothing:antialiased;height:100%;}
+table {border-collapse:collapse;border-spacing:0;}
+form {margin:0;}
+fieldset, img, iframe {border:0;}
+img {display:block;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal;margin:0;}
+ol, ul {list-style:none;margin:0;padding:0;}
+fieldset, blockquote, dl, dd, dt {margin:0;padding:0;}
+label, input[type="button"], input[type="submit"], button {cursor:pointer;}
+a, object, button, input:focus, select:focus {outline:none;}
+th, td, li, img {text-align:left;vertical-align:top;}
+button {vertical-align:top;}
+address {color:#636363;font-size:12px;font-weight:bold;font-style:normal;}
+header, section, footer,
+aside, nav, article, figure {display:block;}

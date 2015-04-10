@@ -1,0 +1,52 @@
+.styleguide
+  nav.sections
+    background-color: #eaeaea
+    background-image: -moz-linear-gradient(#fafafa, #eaeaea)
+    background-image: -webkit-linear-gradient(#fafafa, #eaeaea)
+    background-image: linear-gradient(#fafafa, #eaeaea)
+    background-repeat: repeat-x
+    border: 1px solid #eaeaea
+    border-bottom-color: #cacaca
+    border-radius: 3px
+    font-size: 12px
+    font-weight: bold
+    margin-bottom: 20px
+    position: relative
+
+    li
+      display: table-cell
+      width: 1%
+
+      &:first-child a
+        border-left: none
+        border-left-radius: 3px
+
+      &:last-child a
+        border-right: none
+        border-right-radius: 3px
+
+      a
+        border-bottom: 2px solid transparent
+        border-left: 1px solid #fcfcfc
+        border-left-color: rgba(255,255,255,0.7)
+        border-right: 1px solid #eee
+        border-right-color: rgba(0,0,0,0.04)
+        display: block
+        color: #777
+        font-size: 12px
+        line-height: 35px
+        text-align: center
+        text-decoration: none
+        text-shadow: 0 1px 0 #fff
+
+        &:hover
+          text-decoration: underline
+
+        &.selected
+          background-color: #ebebeb
+          background-image: -moz-linear-gradient(#fcfcfc, #ebebeb)
+          background-image: -webkit-linear-gradient(#fcfcfc, #ebebeb)
+          background-image: linear-gradient(#fcfcfc, #ebebeb)
+          background-repeat: repeat-x
+          border-bottom-color: #d26911
+          color: #000

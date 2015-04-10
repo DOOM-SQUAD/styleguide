@@ -1,0 +1,11 @@
+%article.styleguide{ class: "#{styleguide_section} #{styleguide_reference}" }
+  %header
+    .container
+      %h1 Styleguide
+
+  %section.body.container
+    = render partial: "styleguide/shared/sections"
+    = render partial: "styleguide/sections/#{styleguide_section}/references" rescue nil
+
+    %section.content.markdown-body
+      = render template: "styleguide/sections/#{styleguide_section}/#{styleguide_reference}"

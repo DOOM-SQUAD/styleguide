@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Styleguide
+    %meta{charset: "utf-8"}
+    = stylesheet_link_tag "styleguide/application", media: "screen"
+    = yield :stylesheets
+
+  %body
+    = yield :header
+    = yield
+    = yield :footer
+
+    = yield :javascripts

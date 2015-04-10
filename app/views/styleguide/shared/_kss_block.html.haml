@@ -1,0 +1,21 @@
+.example
+  %h3= section.section
+
+  .description
+    %p= markdown section.description
+
+    - if section.modifiers.any?
+      %ul.modifiers
+        - section.modifiers.each do |modifier|
+          %li
+            %strong= modifier.name
+            \- #{modifier.description}
+
+  .element= example_html.gsub('$modifier_class', '').html_safe
+  - section.modifiers.each do |modifier|
+    .element.modifier
+      %span.name= modifier.name
+      = example_html.gsub('$modifier_class', "#{modifier.class_name}").html_safe
+
+  .html
+    = highlight_syntax(example_html.gsub('$modifier_class', ''), 'html').html_safe
